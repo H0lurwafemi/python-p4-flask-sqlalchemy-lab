@@ -1,0 +1,14 @@
+
+
+<ul>
+    <li>Name: {{ zookeeper.name }}</li>
+    <li>Birthday: {{ zookeeper.birthday }}</li>
+    <li>Animals:
+      <ul>
+        {% for animal in zookeeper.animals %}
+          <li>{{ animal.name }} ({{ animal.species }})</li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+  

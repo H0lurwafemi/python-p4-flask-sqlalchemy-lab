@@ -1,0 +1,12 @@
+<ul>
+  <li>Environment: {{ enclosure.environment }}</li>
+  <li>Open to Visitors: {{ enclosure.open_to_visitors }}</li>
+  <li>
+    Animals:
+    <ul>
+      {% for animal in enclosure.animals %}
+      <li>{{ animal.name }} ({{ animal.species }})</li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>
